@@ -4,7 +4,7 @@ A Citizen-Centered Transparency, Governance & Accountability Portal
 
 📌 Overview
 
-The Nigeria Future Governance Platform is a digital initiative designed to strengthen governance, accountability, and citizens’ participation.
+The Nigeria Future Governance Platform is a digital initiative designed to strengthen governance, accountability, and citizens' participation.
 Built with modern, secure, and responsive web technologies, the platform allows Nigerians to:
 
 Stay up-to-date with verified government news
@@ -36,7 +36,7 @@ Locked pages until login is completed
 
 Verified government news updates
 
-Comment sections for citizens’ reactions
+Comment sections for citizens' reactions
 
 Real-time UI updates
 
@@ -133,13 +133,8 @@ Desktop & widescreen monitors
 The layout automatically adjusts, ensuring accessibility for all citizens.
 
 🚀 How to Run Locally
-1. Clone the repository:
-git clone git@github.com:codestantceasar/Nigeria-Transparency-program.git
 
-2. Open the project folder:
-cd Nigeria-Transparency-program
-
-3. Launch the website (simple method)
+1.([](https://codestantceasar.github.io/Nigeria-Transparency-program/))
 
 Open index.html in a browser
 OR use a live server extension from VS Code.
@@ -152,9 +147,9 @@ Role-based access (Admin, Ministry Officials, Citizens)
 
 National Open Data Portal
 
-Project Monitoring system
+Project Monitoring System
 
-Digital ID / NIN verification
+NIN verification
 
 Analytics dashboard for governance performance
 
@@ -179,7 +174,7 @@ Submit a pull request or open an issue.
 📜 License
 
 This project is open for educational and governance innovation purposes.
-Custom licensing can be added depending on government use-case.
+Custom licensing can be added depending on the government use case.
 
 👤 Author
 
