@@ -134,7 +134,7 @@ The layout automatically adjusts, ensuring accessibility for all citizens.
 
 🚀 How to Run Locally
 
-1.([](https://codestantceasar.github.io/Nigeria-Transparency-program/))
+1.https://codestantceasar.github.io/Nigeria-Transparency-program/
 
 Open index.html in a browser
 OR use a live server extension from VS Code.
