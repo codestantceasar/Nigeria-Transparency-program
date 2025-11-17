@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Dashboard • Nigeria Future Governance Platform</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="exec-header">
+    <div class="header-inner">
+      <div class="brand-left">
+        <img src="assets/nigeria-flag.png" class="flag" alt="Flag"/>
+        <div class="brand-text">
+          <div class="topline">Federal Republic of Nigeria</div>
+          <div class="tagline">Citizen Dashboard</div>
+        </div>
+      </div>
+      <nav class="topnav" id="topnav-dashboard"></nav>
+    </div>
+  </header>
+
+  <main class="main-wrap dashboard-layout">
+    <aside class="sidebar">
+      <div class="sidebar-user">
+        <img src="assets/coat-of-arms.png" alt="coat" class="sidebar-coat" />
+        <div>
+          <div class="muted small">Signed in as</div>
+          <div id="dashName" class="sidebar-name">Citizen</div>
+          <div id="dashRole" class="muted small">Role</div>
+        </div>
+      </div>
+
+      <nav class="side-links">
+        <a href="index.html">Dashboard</a>
+        <a href="feedback.html">Submit Feedback</a>
+        <a href="ministries.html">Ministries</a>
+        <a href="news.html">News</a>
+        <a href="#" id="dashLogout">Logout</a>
+      </nav>
+    </aside>
+
+    <section class="content">
+      <section class="card">
+        <h2>Welcome back, <span id="userFullName">Citizen</span></h2>
+        <p class="muted">Here's your recent activity and a summary of your interactions with government services.</p>
+      </section>
+
+      <section class="dashboard-grid">
+        <div class="card">
+          <h3>My Submissions</h3>
+          <div id="myFeedbackList">No submissions yet.</div>
+        </div>
+
+        <div class="card">
+          <h3>Notifications</h3>
+          <div id="myNotifications"><div class="muted">No new notifications.</div></div>
+        </div>
+
+        <div class="card">
+          <h3>Quick Links</h3>
+          <ul class="quick-links">
+            <li><a href="feedback.html">Submit Feedback</a></li>
+            <li><a href="ministries.html">Contact Ministry</a></li>
+            <li><a href="news.html">Latest News</a></li>
+          </ul>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>© 2025 Nigeria Future Governance Platform</div>
+  </footer>
+</body>
+</html>

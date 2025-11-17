@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Feedback • Nigeria Future Governance Platform</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="exec-header">
+    <div class="header-inner">
+      <div class="brand-left">
+        <img src="assets/nigeria-flag.png" class="flag" alt="Flag"/>
+        <div class="brand-text">
+          <div class="topline">Federal Republic of Nigeria</div>
+          <div class="tagline">Citizen Feedback Portal</div>
+        </div>
+      </div>
+      <nav class="topnav" id="topnav-feedback"></nav>
+    </div>
+  </header>
+
+  <main class="main-wrap">
+    <section class="feedback-section">
+      <h2>Submit Feedback</h2>
+      <p class="muted">Your feedback helps improve public services. Attach an image (optional) and select the relevant category.</p>
+
+      <form id="feedbackForm" class="feedback-form">
+        <label for="fbCategory">Category</label>
+        <select id="fbCategory" required>
+          <option value="">Select category</option>
+          <option value="infrastructure">Infrastructure</option>
+          <option value="healthcare">Healthcare</option>
+          <option value="education">Education</option>
+          <option value="governance">Governance</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="fbMessage">Message</label>
+        <textarea id="fbMessage" placeholder="Describe the issue or suggestion..." required></textarea>
+
+        <label for="fbAttach">Attach (optional)</label>
+        <input id="fbAttach" type="file" accept="image/*" />
+
+        <div class="form-row">
+          <button type="submit" class="btn-primary">Submit Feedback</button>
+          <button type="button" class="btn-tertiary" onclick="clearFeedback()">Clear</button>
+        </div>
+      </form>
+
+      <div id="feedbackConfirmation" class="hidden confirmation">Thank you — your feedback has been recorded.</div>
+
+      <div id="feedbackList" class="feedback-list"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>© 2025 Nigeria Future Governance Platform</div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home • Nigeria Future Governance Platform</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="exec-header">
+    <div class="header-inner">
+      <div class="brand-left">
+        <img src="assets/nigeria-flag.png" alt="Nigeria flag" class="flag"/>
+        <div class="brand-text">
+          <div class="topline">Federal Republic of Nigeria</div>
+          <div class="tagline">Nigeria Future Governance Platform</div>
+        </div>
+      </div>
+
+      <nav class="topnav" id="topnav"></nav>
+    </div>
+  </header>
+
+  <main class="main-wrap dashboard-layout">
+    <aside class="sidebar">
+      <div class="sidebar-user">
+        <img src="assets/coat-of-arms.png" alt="coat" class="sidebar-coat" />
+        <div>
+          <div class="muted small">Signed in as</div>
+          <div id="sidebarName" class="sidebar-name">Citizen</div>
+          <div id="sidebarRole" class="muted small">Role</div>
+        </div>
+      </div>
+
+      <nav class="side-links">
+        <a href="index.html" class="active">Dashboard</a>
+        <a href="ministries.html">Ministries</a>
+        <a href="news.html">National News</a>
+        <a href="feedback.html">Submit Feedback</a>
+        <a href="dashboard.html">My Profile</a>
+        <a href="#" id="sidebarLogout">Logout</a>
+      </nav>
+
+      <div class="side-card">
+        <h4>Quick Actions</h4>
+        <ul>
+          <li><a href="feedback.html">Report an Issue</a></li>
+          <li><a href="ministries.html">Contact Ministry</a></li>
+          <li><a href="news.html">Recent News</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <section class="content">
+      <section class="hero card">
+        <h1 id="welcomeHeading">Welcome, Citizen 🇳🇬</h1>
+        <p id="welcomeSub">Track national progress, submit feedback, and stay informed.</p>
+      </section>
+
+      <section class="card-list">
+        <h2>Latest Government Updates</h2>
+
+        <article class="post list-post">
+          <div class="post-left">
+            <div class="post-icon">🚧</div>
+          </div>
+          <div class="post-body">
+            <h3>New Road Project in Lagos</h3>
+            <p>The Lagos State Government has commenced a 20km expressway to reduce congestion. Citizens can monitor and report deviations.</p>
+            <div class="post-meta muted">Published: Nov 12, 2025 • Category: Infrastructure</div>
+            <div class="comments">
+              <ul id="comment-list-1"><li>Great step forward!</li></ul>
+              <textarea id="comment-input-1" placeholder="Add a comment..."></textarea>
+              <button onclick="addComment(1)" class="btn-secondary">Post Comment</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="post list-post">
+          <div class="post-left"><div class="post-icon">🏥</div></div>
+          <div class="post-body">
+            <h3>Free Healthcare Initiative Launched</h3>
+            <p>Federal program to expand primary care in rural areas; state rollouts are scheduled monthly.</p>
+            <div class="post-meta muted">Published: Nov 9, 2025 • Category: Healthcare</div>
+            <div class="comments">
+              <ul id="comment-list-2"><li>This will help many families.</li></ul>
+              <textarea id="comment-input-2" placeholder="Add a comment..."></textarea>
+              <button onclick="addComment(2)" class="btn-secondary">Post Comment</button>
+            </div>
+          </div>
+        </article>
+
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>© 2025 Nigeria Future Governance Platform</div>
+  </footer>
+</body>
+</html>

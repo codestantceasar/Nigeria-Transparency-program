@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login • Nigeria Future Governance Platform</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body class="page-auth">
+  <header class="exec-header">
+    <div class="header-inner">
+      <div class="brand-left">
+        <img src="assets/nigeria-flag.png" alt="Nigeria flag" class="flag"/>
+        <div class="brand-text">
+          <div class="topline">Federal Republic of Nigeria</div>
+          <div class="tagline">Official Citizen Access Portal</div>
+        </div>
+      </div>
+      <div class="brand-right">
+        <img src="assets/coat-of-arms.png" alt="Coat of arms" class="coat"/>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-wrap auth-wrap">
+    <section class="auth-card">
+      <h2 class="auth-title">🔐 Citizen Access Gateway</h2>
+      <p class="muted">Sign in with your national credentials to access government updates and services.</p>
+
+      <form id="loginForm" class="auth-form" autocomplete="off">
+        <label for="fullName">Full name</label>
+        <input id="fullName" name="fullName" type="text" placeholder="e.g. Amina Bello" required />
+
+        <label for="nin">National Identification Number (NIN)</label>
+        <input id="nin" name="nin" type="text" maxlength="11" placeholder="11-digit NIN" pattern="\d{11}" required />
+
+        <label for="role">Access type</label>
+        <select id="role" name="role" required>
+          <option value="citizen">Citizen</option>
+          <option value="executive">Government Official</option>
+        </select>
+
+        <div class="form-row">
+          <button type="submit" class="btn-primary">Login Securely</button>
+        </div>
+        <div class="small-note">Prototype note: NIN is validated client-side for format only.</div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>© 2025 Nigeria Future Governance Platform</div>
+  </footer>
+</body>
+</html>
